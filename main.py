@@ -32,8 +32,10 @@ class Vaca(Animal):
 animal1=Gato("Michi",23)
 animal2=Perro("Firulai",True)
 animal3=Vaca("Lola",False)
-lista=[animal1,animal2,animal3]
-for i in lista:
-    i.hablar()
 
+def hablar(objeto):
+    objeto.hablar()
 
+hablar(animal1)
+hablar(animal2)
+hablar(animal3)
